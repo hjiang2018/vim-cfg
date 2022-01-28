@@ -55,12 +55,12 @@ color mycolor
 	set nobackup
 	set   cindent
 	set   cinoptions=:0
-	"set   clipboard=unnamed,unnamedplus
-	set   clipboard=unnamed
+	set   clipboard=unnamed,unnamedplus
+	"set   clipboard=unnamed
 	set   cursorline
 	set   completeopt=longest,menuone
 	set noexpandtab
-	set   fileencodings=utf-8,gb2312,gbk,gb18030
+	"set   fileencodings=utf-8,gb2312,gbk,gb18030
 	set   fileformat=unix
 	set   foldcolumn=1
 	set   foldenable
@@ -143,7 +143,7 @@ let mapleader=","
 	let g:NERDTreeAutoCenter=1
 	let g:NERDTreeShowBookmarks=1
 	let g:NERDTreeShowLineNumber=1
-	let g:NERDTreeQuitOnOpen=1
+	let g:NERDTreeQuitOnOpen=0
 " ale
 	let g:ale_sign_column_always = 1
 	let g:ale_sign_error = '✗'
@@ -154,7 +154,7 @@ let mapleader=","
 	let g:ale_lint_on_text_changed = 'normal'
 	let g:ale_lint_on_insert_leave = 1
 	let g:ale_c_gcc_options = '-Wall -O2 -std=c99'
-	let g:ale_cpp_gcc_options = '-Wall -O2 -std=c++14'
+	let g:ale_cpp_cc_options = '-Wall -O2 -std=c++14'
 	let g:ale_c_cppcheck_options = ''
 	let g:ale_cpp_cppcheck_options = ''
 "show alert only on save
